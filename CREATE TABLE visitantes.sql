@@ -1,4 +1,4 @@
-CREATE TABLE visitantes (
+CREATE TABLE visitas (
 
     vis_codigo SERIAL PRIMARY KEY, 
     vis_nombres VARCHAR(30),
