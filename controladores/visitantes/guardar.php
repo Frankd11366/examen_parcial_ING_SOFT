@@ -1,10 +1,6 @@
 <?php
 
 require '../../modelos/visitante.php';
-
-$procedencia = $_POST['vis_procedencia'];
-$razon = $_POST['vis_razon'];
-
 // VALIDAR INFORMACION
 $_POST['vis_nombres'] = htmlspecialchars($_POST['vis_nombres']);
 $_POST['vis_apellidos'] = htmlspecialchars($_POST['vis_apellidos']);
@@ -57,7 +53,7 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../vistas/clientes/index.php" class="btn btn-primary w-100">Volver al formulario</a>
+        <a href="../../vistas/visitantes/index.php" class="btn btn-primary w-100">Volver al formulario</a>
     </div>
 </div>
 

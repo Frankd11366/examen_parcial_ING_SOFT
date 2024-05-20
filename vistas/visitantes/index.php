@@ -2,31 +2,43 @@
 
 include_once '../../vistas/templates/header.php'; ?>
 
-<h1 class="text-center">FORMULARIO DE CLIENTES</h1>
+<h1 class="text-center">FORMULARIO DE VISITANTES</h1>
 <div class="row justify-content-center">
-    <form action="/TAREA_INSERT_SELECT/controladores/clientes/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="/controladores/visitantes/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nombre">NOMBRE</label>
-                <input type="text" name="cli_nombre" id="cli_nombre" class="form-control" required>
+                <label for="vis_nombres">NOMBRES</label>
+                <input type="text" name="vis_nombres" id="vis_nombres" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_apellido">APELLIDO</label>
-                <input type="text" name="cli_apellido" id="cli_apellido" class="form-control" required>
+                <label for="vis_apellidos">APELLIDOS</label>
+                <input type="text" name="vis_apellidos" id="vis_apellidos" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nit">NIT</label>
-                <input type="number" name="cli_nit" id="cli_nit" class="form-control" required>
+                <label for="vis_procedencia">PROCEDENCIA</label>
+                <input type="text" name="vis_procedencia" id="vis_procedencia" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_telefono">TELEFONO</label>
-                <input type="number" name="cli_telefono" id="cli_telefono" class="form-control" required>
+                <label for="vis_fecha_ingreso">FECHA Y HORA QUE INGRESÓ</label>
+                <input type="text" name="vis_fecha_ingreso" id="vis_fecha_ingreso" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="vis_fecha_salio">FECHA Y HORA QUE SALIÓ</label>
+                <input type="text" name="vis_fecha_salio" id="vis_fecha_salio" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="vis_razon">RAZON</label>
+                <input type="text" name="vis_razon" id="vis_razon" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">

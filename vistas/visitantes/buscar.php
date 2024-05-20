@@ -31,12 +31,6 @@ include_once '../../vistas/templates/header.php'; ?>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="vis_fecha_ingreso">Fecha y Hora que Ingresó</label>
-                <input type="text" name="vis_fecha_ingreso" id="vis_fecha_ingreso" class="form-control" required>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col">
                 <label for="vis_fecha_salio">Fecha y Hora que Salió</label>
                 <input type="text" name="vis_fecha_salio" id="vis_fecha_salio" class="form-control" required>
             </div>
