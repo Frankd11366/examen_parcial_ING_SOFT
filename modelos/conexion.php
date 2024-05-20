@@ -73,7 +73,7 @@ abstract class Conexion{
 
     protected static function conectar() : void {
         try {
-            self::$conexion = new PDO ("informix:host=host.docker.internal; service=9088;database=tienda; server=informix;  protocol=onsoctcp;EnableScrollableCursors=1", "informix", "in4mix");            self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            self::$conexion = new PDO ("informix:host=host.docker.internal; service=9088;database=tienda; server=informix;  protocol=onsoctcp;EnableScrollableCursors=1", "informix", "in4mix"); self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
             throw new Exception("Error de conexión: " . $e->getMessage());
         }
